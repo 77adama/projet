@@ -16,6 +16,7 @@
   /**
    * fonction qui teste  la validite d'un nombre
    */
+      
   function valideNombre( $n,string $k,array &$erre):void{
       if(estVide($n)){
           

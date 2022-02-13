@@ -3,10 +3,10 @@
         if(isset($_SESSION['err'])){
             $err=$_SESSION['err'];
         }
-    
-    
     ?>
-       
+     <link rel="stylesheet" href="../Css/style.css">
+     <body>
+         <div class="container">
     <form action="controller.php" method="POST">
     <label for="j"> saisir jour :</label><br>
     <input type="text" name="j" /> 
@@ -29,8 +29,10 @@
             if(!empty($err['a'])) echo $err['a'] ; else echo '';
         ?>
          <br>
-    <input type="submit" name="valider" value="valider"/>
+    <input class="sub" type="submit" name="valider" value="valider"/>
     </form>
+    </div>
+    </body> 
     <?php
     
     if(isset($err)){

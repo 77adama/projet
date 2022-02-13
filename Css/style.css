@@ -1,0 +1,35 @@
+body{
+    background-color: blue;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    
+}
+.container{
+    background-color: aqua;
+    width: 100% ;
+    height: auto;
+    padding: 3rem 0 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+form input{
+    width: 12vw;
+    height: 5vh;
+}
+.sub{
+    width: 4vw;
+    height: 4vh;
+    margin-top: 0.5rem;
+}
+.section{
+    position: absolute;
+    left:  2rem;
+   top:  7rem;
+   font-size: 1.5rem;
+}

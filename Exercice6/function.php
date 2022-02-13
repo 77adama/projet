@@ -11,21 +11,27 @@
    * fonction qui teste si le champ est vide
    */
     
-    function estVide($n):bool{
-        return empty($n);
+    function estVide($n,):bool{
+        
+            
+        
+        return empty($n );
     }
     /**
      * fonction qui teste  la validite d'un nombre
      */
     function valideNombre( $n,string $k,array &$erre):void{
-        if(estVide($n)){
+        if(estVide($n)&$n!=0){
             
             $erre[$k]="veuiller saisir une valeur";
         }else{
             if(!estNum($n)){
             $erre[$k]="veuillez saisir un nombre" ;
             }
-        }
+
+                }
+            
+        
     }
     /**
      *fonction qui donne le resultat 

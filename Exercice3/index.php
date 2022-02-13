@@ -7,4 +7,5 @@ echo "le produit est" .$a*$b."<br>";
 echo "le carree est". pow(($a+$b),2)."<br>";
 echo "la division est". $a/$b."<br>";
 echo "le modulo est". $a%$b."<br>";
-
+echo  "l'exponentie de a est:".exp($a)."<br>";
+echo  "l'exponentie de b est:".exp($b);

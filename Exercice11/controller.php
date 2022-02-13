@@ -1,17 +1,24 @@
+<ul>
 <?php
 session_start();
-        //include_once("function.php");
-        if(isset($_POST['valider'])){
-            $_N = $_POST['N'];
-           
-            $err=[];
-            valideNombre($_N,"N",$err);
-            
+include_once("function.php");
+if(isset($_POST['valider'])){
+    $N = $_POST['N'];
+    $err=[];
+    valideNombre($N,"N",$err);
+    
+    $T1=affichTableau(tableauPremier($N));
+    $T3=affichTableau(superieur(tableauPremier($N)));
+    $T2=affichTableau(inferieur(tableauPremier($N)));
+
+
+    if(count($err)==0){
+       var_dump($T1);
+       var_dump($T2);
+       var_dump($T3);
         
-        if(count($err)==0){
-                
-          }else{
-             $_SESSION['err']=$err;
-             header('location:index.php');
-          }
-        }
+    }else{
+       $_SESSION['err']=$err;
+       header('location:index.php');
+    }
+}

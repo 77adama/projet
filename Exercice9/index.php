@@ -4,18 +4,21 @@
     if(isset($_SESSION['err'])){
         $err=$_SESSION['err'];
     }
-
-
 ?>
+<link rel="stylesheet" href="../Css/style.css">
+<body>
+    <div class="container">
 <form action="controller.php" method="POST">
     <label for="N" > saisir N : </label> <br>
     <input type="text" name=N> 
     <span style="color:red"> </span>
     <?php
-            if(!empty($err['N'])) echo $err['N'] ; else echo '';
+            if(!empty($err['N'])) echo $err['N'] ; 
         ?> <br>
-    <input type="submit" name="valider" valu="valider">
+    <input class="sub" type="submit" name="valider" valu="valider">
 </form>
+</div>
+</body>
     <?php
    
 

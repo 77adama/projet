@@ -1,4 +1,5 @@
-<ul>
+<link rel="stylesheet" href="../Css/style.css">
+
 <?php
 session_start();
 include_once("function.php");
@@ -10,18 +11,23 @@ if(isset($_POST['valider'])){
 
 
     if(count($err)==0){
+        
         for ($i=1; $i <=$n ; $i++) { 
            ?>
-           <li>
-               <?php
-                 echo $i;
-             ?>
-           </li>
+           
+           <ul>
+                <li>
+                    <?php
+                        echo $i;
+                    ?>
+                </li>
+            </ul>
+
           <?php
           }
+         
          ?> 
       
-</ul>
     <?php
         
     }else{

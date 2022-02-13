@@ -8,9 +8,7 @@ if(isset($_POST['valider'])){
     
     if(count($err)==0){
         for ($i=1; $i <=$n ; $i++) { 
-            ?>
-           
-          
+            ?> 
         <input type="text" name="n" /> <br>
             
        <?php    

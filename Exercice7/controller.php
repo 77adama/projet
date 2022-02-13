@@ -10,26 +10,54 @@
             valideNombre($_m,"m",$err);
             valideNombre($_a,"a",$err);
             if(count($err)==0){ 
-                $njj=nbrJour($_m,$_a);
-              if ($_j==$njj){
+                if ($_j<1|$_j>31|$_m<1|$_m>12|($_j>30&($_m==4|$_m==6|$_m==9|$_m==11))|($_j>29&($_a%4==0))|($_j>28&$_a%4!=0)) {
+                 echo "la date saisie n'est pas valide";
+                } else {
+                  $njj=nbrJour($_m,$_a);
+                  $js=$_j+1; $ms=$_m; $as=$_a;
+                  if ($_j==$njj) {
+                    $js=1;
+                    $ms=$_m+1;
+                    $as=$_a;
+                            if ($_m==12) {
+                              $js=1; $ms=1; $as=$_a+1;
+                            }
+                  }
+                  echo "la date suivante est :".$js."/".$ms."/".$as;
+                }
+                 
+               
+              
+
+
+
+
+
+            }
+/*
+                   if ($_j==$njj){
                   $js=1;
                   $ms=$_m+1;
                   $as=$_a;
-                  
-              
-                  if ($_m==12) {
-                      $js=1; $ms=1; $as=$_a+1;
-                  }
-            else{
-                    $js=$_j+1; $ms=$_m; $as=$_a;
-                  }
-                  
-                  
-              }
-              echo "la date suivante est:".$js."/".$ms."/".$as;
+                  echo $js."/".$ms."/".$as;
+                   }else{ 
+                          if ($_m==12) {
+                               $js=1; $ms=1; $as=$_a+1;
+                  echo $js."/".$ms."/".$as;
 
-            }
+                }
+                   else{
+                    
+                    $js=$_j+1; $ms=$_m; $as=$_a;
+                  echo $js."/".$ms."/".$as;
+
+                  }
+                  
+                 
+              }
             
+            }
+            */
             else{
                $_SESSION['err']=$err;
                header('location:index.php');

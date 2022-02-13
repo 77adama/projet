@@ -1,6 +1,39 @@
 <?php
+ function nombrepremiere($n){
+    $nbDiv = 0;   
+    for($i=1;$i<=$n;$i++){
+        if($n%$i==0){
+            $nbDiv++;            
+        }
+    }
+    if($nbDiv == 2){
+        return true;
+    }      
+}
+function tableauPremier(array $array):void{
+    for ($i=0; $i <=count($array) ; $i++) { 
+        if ($i==nombrepremiere) {
+            echo $array[$i];
+        }
+    }
+}
 
-
+/** 
+          function nombrepremiere($n){
+              $n=23;
+                $nbDiv = 0;   
+                for($i=1;$i<=$n;$i++){
+                    if($n%$i==0){
+                        $nbDiv++;            
+                    }
+                }
+                if($nbDiv == 2){
+                    return $true; 
+                } 
+                  
+            }
+    
+    */
 
 // Fonction N°1 *****************************
 /*function nbPremier($n){
@@ -27,6 +60,7 @@
 
 }*/
 
+/** 
 //  Fonction N°2 *****************************
 function moyenne ($n){
     $tab=[];
@@ -42,7 +76,7 @@ function moyenne ($n){
   $moy=$som/$n;
  return $moy;
 }
-
+*/
 //  Fonction N°3 *****************************
 /*
 function superieur($n){
@@ -79,11 +113,8 @@ function inferieur($n){
 //******************************************************** */
 //Test
 
-if ($_POST) {
-   $n=$_POST['entier'];
-   $r=moyenne($n);
-echo ("La moyenne est\t".$r);
-}
+
+
 
 
 ?>
@@ -100,7 +131,7 @@ echo ("La moyenne est\t".$r);
     <form method="post" action="">
 
     <label for="">Donner un entier</label><br>
-    <input type="text" name="entier"><br>
+    <input type="text" name="n"><br>
     <input type="submit">
     </form>
     
