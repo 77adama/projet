@@ -50,14 +50,10 @@ echo "saisir les valeurs de a, b et c de l’équation : aX²+bX+c=0"
 </form>
 </div>
 </body>
-
-<?php
-
-if(isset($err)){
-unset($_SESSION['err']);
-exit();
-}
-
-?>
-    
+        <?php
+        if(isset($err)){
+        unset($_SESSION['err']);
+        exit();
+        }
+        ?>
 </html>

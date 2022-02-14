@@ -29,9 +29,7 @@
             $erre[$k]="veuillez saisir un nombre" ;
             }
 
-                }
-            
-        
+                }   
     }
     /**
      *fonction qui donne le resultat 

@@ -10,7 +10,7 @@
             }
             function tableauPremier($n):array{
                 $tabpr=[];
-                for ($i=1; $i <=$n ; $i++) { 
+                for ($i=1; $i<=$n; $i++) { 
                     if ($i==nombrepremiere($i)) {
                        $tabpr[]=$i;
                     }
@@ -30,7 +30,7 @@
         $moy=$som/count($tabpr);
         foreach ($tabpr as $val) {
             if ($val>=$moy) {
-                $tabsup[]=$val;
+                $tabsup[]=nombrepremiere($val);
             }
         } 
          return $tabsup;     
@@ -76,7 +76,6 @@
     */
    function valideNombre( $n,string $k,array &$erre):void{
        if(estVide($n)){
-           
            $erre[$k]="veuiller saisir une valeur";
        }else{
            if(!estNum($n)){
