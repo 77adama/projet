@@ -29,18 +29,19 @@
         $tabsup=[];
         $moy=$som/count($tabpr);
         foreach ($tabpr as $val) {
-            if ($val>=$moy) {
-                $tabsup[]=nombrepremiere($val);
+            if ($tabpr[$val]>=$moy) {
+                $tabsup[]=$tabpr[$val];
             }
         } 
          return $tabsup;     
     }
+    
     function inferieur(array $tabpr):array{
         $tabinf=[];
         $moy=$som/count($tabpr);
         foreach ($tabpr as $val) {
-            if ($val<$moy) {
-                $tabinf[]=$val;
+            if ($tabpr[$val]<$moy) {
+                $tabinf[]=$tabpr[$val];
             }
         } 
              return $tabinf; 

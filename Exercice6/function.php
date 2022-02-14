@@ -11,10 +11,7 @@
    * fonction qui teste si le champ est vide
    */
     
-    function estVide($n,):bool{
-        
-            
-        
+    function estVide($n,):bool{  
         return empty($n );
     }
     /**
