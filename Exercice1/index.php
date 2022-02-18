@@ -13,3 +13,7 @@ $surf=surface($x);
 echo "la surface est $surf" . "<br>";
 $diago=diagonal($x);
 echo "la diagonal est $diago";
+?> <br>
+<body>
+<button class="button"> <a href="../Exercice2/index.php">SUIVANT</a> </button>
+</body>

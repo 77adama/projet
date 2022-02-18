@@ -16,6 +16,8 @@
     ?> <br>
     
 <input class="sub" type="submit" name="valider" value="valider"/>
+<button class="button"> <a href="../Exercice9/index.php">SUIVANT</a> </button>
+<button class="button"> <a href="../Exercice7/index.php">PRECEDANT</a> </button>
 </form>
 </div>
 </body>

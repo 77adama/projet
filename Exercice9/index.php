@@ -16,6 +16,10 @@
             if(!empty($err['N'])) echo $err['N'] ; 
         ?> <br>
     <input class="sub" type="submit" name="valider" valu="valider">
+   
+<button class="button"> <a href="../Exercice10/index.php">SUIVANT</a> </button>
+<button class="button"> <a href="../Exercice8/index.php">PRECEDANT</a> </button>
+
 </form>
 </div>
 </body>

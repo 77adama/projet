@@ -20,6 +20,9 @@
         
        <input class="sub" type="submit" name="valider" value="valider">
         </div>
+<button class="button"> <a href="../Exercice13/index.php">SUIVANT</a> </button>
+<button class="button"> <a href="../Exercice11/index.php">PRECEDANT</a> </button>
+
     </form>
     </div>
 </body>

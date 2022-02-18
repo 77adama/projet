@@ -9,3 +9,8 @@ echo "la division est". $a/$b."<br>";
 echo "le modulo est". $a%$b."<br>";
 echo  "l'exponentie de a est:".exp($a)."<br>";
 echo  "l'exponentie de b est:".exp($b);
+?><br>
+<body>
+<button class="button"> <a href="../Exercice4/index.php">SUIVANT</a> </button>
+<button class="button"> <a href="../Exercice2/index.php">PRECEDANT</a> </button>
+</body>

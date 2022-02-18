@@ -7,3 +7,8 @@ $r=$A;
 $A=$B;
 $B=$r;
 echo "apres permutation les nombre sont$A et $B";
+?><br>
+<body>
+<button class="button"> <a href="../Exercice5/index.php">SUIVANT</a> </button>
+<button class="button"> <a href="../Exercice3/index.php">PRECEDANT</a> </button>
+</body>

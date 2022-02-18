@@ -10,10 +10,16 @@
             valideNombre($_m,"m",$err);
             valideNombre($_a,"a",$err);
             if(count($err)==0){ 
-                if ($_j<1|$_j>31|$_m<1|$_m>12|($_j>30&($_m==4|$_m==6|$_m==9|$_m==11))|($_j>29&($_a%4==0))|($_j>28&$_a%4!=0)) {
-                 echo "la date saisie n'est pas valide";
-                } else {
-                  $njj=nbrJour($_m,$_a);
+              if ($_j<1|$_j>31|$_m<1|$_m>12|($_j>30&($_m==4|$_m==6|$_m==9|$_m==11))|($_j>29&($_a%4==0))|($_j>28&$_a%4!=0)) {
+               echo "veuillez saisir une date valide";
+              } else {
+                echo dateSuivante($_j, $_m, $_a) ."<br>";
+                echo datePrecedante($_j, $_m, $_a);
+              }
+              
+             
+             /* 
+              $njj=nbrJour($_m,$_a); 
                   $js=$_j+1; $ms=$_m; $as=$_a;
                   if ($_j==$njj) {
                     $js=1;
@@ -24,8 +30,8 @@
                             }
                   }
                   echo "la date suivante est :".$js."/".$ms."/".$as;
-                }
-                 
+                */    }
+              
                
               
 
@@ -33,7 +39,7 @@
 
 
 
-            }
+            
 /*
                    if ($_j==$njj){
                   $js=1;

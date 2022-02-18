@@ -13,6 +13,10 @@
     ?> <br>
     
 <input type="submit" name="valider" value="valider"/>
+
+<button class="button"> <a href="../Exercice12/index.php">SUIVANT</a> </button>
+<button class="button"> <a href="../Exercice10/index.php">PRECEDANT</a> </button>
+
 </form>
     <?php
     

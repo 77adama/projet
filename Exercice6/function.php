@@ -25,7 +25,6 @@
             if(!estNum($n)){
             $erre[$k]="veuillez saisir un nombre" ;
             }
-
                 }   
     }
     /**
